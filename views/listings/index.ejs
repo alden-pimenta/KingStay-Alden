@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate") %>
+
+
+<% if(success && success.length){ %>
+<h4 class="alert alert-success"> <%= success %> </h4>
+<% }%>
+    <body>
+
+
+        <!-- <form method="get" action="/listings/new">
+        <button>Create new List</button>
+    </form> -->
+
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <% for (let listing of allListings) { %>
+                <a href="/listings/<%=listing._id%>" class="line-remove">
+
+                    <div class="card col">
+                        <img src="<%= listing.image.url || '/image.png' %>"
+                        class="card-img-top" alt="image">
+                        <div class="card-img-overlay"></div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <b>
+                                    <%= listing.title%>
+                                </b>
+                                <br>
+
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                <%= listing.price%>/Night 
+                                  <!-- .toLocaleString("en-IN") -->
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+
+
+
+    </body>

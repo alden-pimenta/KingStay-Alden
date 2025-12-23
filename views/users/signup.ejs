@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate")%>
+
+<div class="row mt-3">
+    <h1 style="text-align: center;">Sign up</h1>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+            <div>
+                <label for="username" class="form-label">Username</label>
+
+                <input type="text" placeholder="Ente your name" name="username" class="form-control" required>
+                <div class="invalid-feedback"> Enter your correct name</div>
+            </div>
+
+            <div>
+                <label for="email" class="form-label">Email</label>
+
+                <input type="text" placeholder="Ente your email" name="email" class="form-control" required>
+                <div class="invalid-feedback"> Enter your correct email</div>
+            </div>
+
+             <div>
+                <label for="password" class="form-label">Password</label>
+
+                <input type="passwords" placeholder="Ente your password" name="password" class="form-control" required>
+                <div class="invalid-feedback"> Enter your correct password</div>
+            </div><br>
+
+            <button class="btn btn-success">Sign up</button><br><br>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0.1% !important;
+}
+.container{
+    flex: 1;
+}
+/* Navigation bar */
+.navbar{
+    min-height: 80px;
+    background-color: rgb(237, 237, 237);
+}
+
+.fa-crown{
+    color:rgb(208, 211, 166);
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: rgb(96, 110, 100) !important;
+}
+
+/* Footer  */
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: rgb(73, 73, 73);
+}
+
+.f-info{
+    display: flex;
+    height: 8rem;
+    background-color: rgb(212, 214, 215);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-evenly;
+    margin: 0;
+    margin-top: auto; /* This pushes the footer to the bottom in a flex container */
+  /* width: 100%; */
+}
+
+.f-info-links, .f-info-social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* cards */
+
+.card{
+    border: none !important;
+    margin:1rem !important;
+
+
+    width: 95% !important;
+    /* border: 1px solid black !important; */
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    /* width: 90% !important; */
+    object-fit: cover !important;
+    height: 25rem !important;
+    border: 1px solid black !important;
+    /* display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important; */
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.line-remove{
+    text-decoration: none !important;
+}
+
+/* Card Effect */
+.card-img-overlay{
+   color:rgb(21, 21, 21); 
+   opacity: 0;
+   font-size: 1rem;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: rgb(196, 196, 196);
+    transition-duration: 200ms;
+}
+
+/* form */
+form{
+    margin: 0px 2.5rem !important;
+}
+
+.new-listing-h1{
+    margin:2rem 0;
+    text-align: center;
+    color: rgb(56, 55, 55);
+}
